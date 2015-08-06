@@ -40,6 +40,8 @@
 <!--Sidans innehåll-->
 
 <div id="content">
+<div id="content_startsidan">
+
 	<p>
 	Detta är en sida för att värma upp inför den stora dagen och för att testa vilka vänner som känner dessa två bäst. 
 	<br>Ta det lugnt, det ligger bara en himla massa prestige i det här!
@@ -50,34 +52,36 @@
 	Det är nu du måste välja sida. Vems vän vill du vara och besvara frågor om?
 	</p>
 
-		<!--<div id="bilderpastartsidan">-->
-		
-		<div class="container">
-		<div class="row">
+
+	<div class="container">
+	<div class="row">
 
 		<div class="column">
 		<h3>.oO*o. SimOn .oO*o.</h3>
-		<div class="bild_quizstart">
-		<a href="Simon_start.html">
+		<div class="bild_startpage">
 		<img src="/static/Simon.jpg" alt="Simon">
-		</a>
 		</div>
+		</div>
+
+		<div class="column">
+		{% for quiz_slug, quiz in quizzes.items %}
+		<p>{{ quiz.name }}</p>
+		{% endfor %}
 		</div>
 
 		<div class="column">
 		<h3>.oO*o. EriKa .oO*o.</h3>
-		<div class="bild_quizstart">
-		<a href="Erika_start.html">
+		<div class="bild_startpage">
 		<img src="/static/Erika.jpg" alt="Erika">
-		</a>
 		</div>
 		</div>
 
-		</div> <!--table row-->
-		</div> <!--container-->
-		<!--</div> bilderpastartsidan-->
+	</div> <!--table row-->
+	</div> <!--container-->
 
+</div> <!--content_startsidan-->
 </div> <!--#content-->
+
 </div> <!--#wrap-->
 </body>
 </html>

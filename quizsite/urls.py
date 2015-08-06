@@ -1,5 +1,7 @@
 from django.conf.urls import url
 from quiz import views
+
+
 urlpatterns = [
 	url("^$", views.startpage),
 	url(r"^quiz/[a-z-]+/$", views.quiz),
