@@ -18,10 +18,12 @@
 	<h2>En frågesport om Erika, Simon och Simon + Erika</h2>
 
 	<div class="container">
-		<div class="row">
 
-			<div class="column">
-			<div class="active"><a href="start.html"><h3>Välkommen!</h3></a></div>
+		<div class="row">
+		<p><br><br></p>
+
+			<!--<div class="column">
+			<a href="start.html"><h3>Välkommen!</h3></a>
 			</div>
 
 			<div class="column">
@@ -30,25 +32,29 @@
 
 			<div class="column">
 			<a href="Simon_start.html"><h3>Simons quiz</h3></a>
-			</div>
+			</div>-->
 
 		</div> <!--table row-->
 	</div> <!--container-->
 </header>
+
 
 <!--Sidans innehåll-->
 
 <div id="content">
 
 <p></p>
+<!--
 	<div class="bild_question">
 		<img src="/static/Erika_o_Simon_tränar2.jpg" alt="Erika och Simon på gym">
-	</div>
+	</div>-->
 	
 	<h3>{{ question_number }}. {{ question }}</h3>
 	<p>{{ answer1 }}</p>
 	<p>{{ answer2 }}</p>
 	<p>{{ answer3 }}</p>
+
+	<p><a href="{% url "completed_page" quiz_slug %}">Nästa</a></p>
 
 <!--
 <form>

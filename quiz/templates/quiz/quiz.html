@@ -18,19 +18,21 @@
 	<h2>En frågesport om Erika, Simon och Simon + Erika</h2>
 
 	<div class="container">
-		<div class="row">
 
-			<div class="column">
+		<div class="row">
+		<p><br><br></p>
+
+			<!--<div class="column">
 			<a href="start.html"><h3>Välkommen!</h3></a>
 			</div>
 
 			<div class="column">
-			<div class="active"><a href="Erika_start.html"><h3>Erikas quiz</h3></a></div>
+			<a href="Erika_start.html"><h3>Erikas quiz</h3></a>
 			</div>
 
 			<div class="column">
 			<a href="Simon_start.html"><h3>Simons quiz</h3></a>
-			</div>
+			</div>-->
 
 		</div> <!--table row-->
 	</div> <!--container-->
@@ -48,7 +50,7 @@
 <h1>{{ quiz.name }}</h1>
 	<p>{{ quiz.description }}</p>
 
-<div class="kör-knapp"><a href="Erika_fråga1.html">KÖR!</a></div>
+<p><a href="{% url "question_page" quiz_slug 1 %}">Starta</a></p>
 
 </div> <!--#content-->
 </div> <!--#wrap-->

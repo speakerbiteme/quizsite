@@ -18,10 +18,12 @@
 	<h2>En frågesport om Erika, Simon och Simon + Erika</h2>
 
 	<div class="container">
-		<div class="row">
 
-			<div class="column">
-			<a href="start.html"><h3>Välkommen!</h3></a></div>
+		<div class="row">
+		<p><br><br></p>
+
+			<!--<div class="column">
+			<a href="start.html"><h3>Välkommen!</h3></a>
 			</div>
 
 			<div class="column">
@@ -30,11 +32,12 @@
 
 			<div class="column">
 			<a href="Simon_start.html"><h3>Simons quiz</h3></a>
-			</div>
+			</div>-->
 
 		</div> <!--table row-->
 	</div> <!--container-->
 </header>
+
 
 <!--Sidans innehåll-->
 
@@ -43,6 +46,8 @@
 	<h3>Du är klar och fick {{ correct }} av {{ total }} rätt.</h3>
 	<p> 
 	Dina svar kommer att läggas till i potten och hela quizzen utvärderas på självaste DAGEN! :D</p>
+
+	<p><a href="{% url "start_page" %}">Till startsidan</a></p>
 
 </div> <!--#content-->
 </div> <!--#wrap-->
