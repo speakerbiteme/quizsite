@@ -1,0 +1,61 @@
+img {	max-width: 100%;
+		-moz-border-radius: 15px; /* firefox */
+		-ms-border-radius: 15px; /* IE 9 */
+		-webkit-border-radius: 15px; /* safari, chrome */
+		border-radius: 15px; /* standardiserade syntaxen */ }
+
+.bild_quizstart {
+	max-width: 50%;
+}
+
+.bild_quizsida {
+	max-width: 50%;
+}
+
+.container {
+	display: table;
+	width: 100%;
+}
+
+.row	{
+	display: table-row;
+}
+
+.column {
+	display: table-cell;
+}
+
+a:link {
+	font-color: #0C1010;
+}
+
+#wrap {
+		width: 1026px; 
+		margin: auto; 
+		margin-top: 0;
+		background-color: #B2CCCC;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 5%;
+		padding-top: 1px;
+		font-family: sans-serif;
+	}
+
+header {
+	background-color: #75A3A3;
+	background-image: url(/static/Rano.jpg) ;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+header .container {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#bilderpastartsidan {
+	width: 40%;
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
