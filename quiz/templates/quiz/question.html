@@ -48,28 +48,36 @@
 	<div class="bild_question">
 		<img src="/static/Erika_o_Simon_tränar2.jpg" alt="Erika och Simon på gym">
 	</div>-->
-	
+
+<form action="{% url "question_page" quiz.slug question_number %}" method="post">
+
+{% csrf_token %}
+
 	<h3>{{ question_number }}. {{ question }}</h3>
-	<p>{{ answer1 }}</p>
-	<p>{{ answer2 }}</p>
-	<p>{{ answer3 }}</p>
-
-	<p><a href="{% url "completed_page" quiz_slug %}">Nästa</a></p>
-
-<!--
-<form>
-	<p>
-		Här ser du Erika och Simon på gym. Vilken sport utövar Erika annars, i en klubb?
-	</p>
 	
 	<p>
-	<input type="radio" name="sport" value="dressyr" checked>Dressyrridning<br>
-	<input type="radio" name="sport" value="pentathlon" checked>Modern femkamp<br>
-	<input type="radio" name="sport" value="running">Mellandistanslöpning<br>
+		<label>
+			<input type="radio" name="answer" value="1" checked>{{ answer1 }}
+		</label>
 	</p>
 
-	<input type="submit" value="Submit">
-</form>-->
+	<p>
+		<label>
+			<input type="radio" name="answer" value="2" checked>{{ answer2 }}
+		</label>
+	</p>
+
+	<p>
+		<label>
+			<input type="radio" name="answer" value="3" checked>{{ answer3 }}
+		</label>
+	</p>
+	
+	<button type="submit">Nästa</button>
+
+</form>
+
+	<!--<p><a href="{% url "question_page" quiz.slug question_number|add:1 %}">Nästa</a></p>-->
 	
 </div> <!--#content-->
 </div> <!--#wrap-->
